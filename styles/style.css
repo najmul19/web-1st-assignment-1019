@@ -30,3 +30,9 @@ hr{
 .gray-icons img {
     filter: grayscale(100%);
 }
+
+header{
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: top right, bottom right;
+}
