@@ -25,71 +25,94 @@
 <body class="bg-[#ffffff]">
     <header class="h-auto lg:h-[900px] ">
         <nav class="flex flex-wrap items-center py-4 w-10/12 mx-auto">
-            <div class="flex flex-1 justify-start ">
-                <ul class="md:flex gap-14 text-[#505F98]  ">
-                    <li class="nav-title "><a href="">Home</a></li>
-                    <li class="nav-title "><a href="">About</a></li>
-                    <li class="nav-title "><a href="">Cntact</a></li>
+            
+           
+             <div class="flex flex-1 justify-start relative">
+
+                <div class="relative group">
+                    <button class="md:hidden btn btn-sm bg-[#505F98] text-gray-300 w-30 rounded-[3px]">Menu</button>
+            
+                    <div class="absolute top-full left-0 hidden group-hover:block bg-white shadow-md rounded-md w-40">
+                        <ul class="text-[#505F98]">
+                            <li class="px-4 py-2 border-b hover:bg-gray-100"><a href="#">Home</a></li>
+                            <li class="px-4 py-2 border-b hover:bg-gray-100"><a href="#">About</a></li>
+                            <li class="px-4 py-2 hover:bg-gray-100"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- normal -->
+                <ul class="hidden md:flex gap-14 text-[#505F98]">
+                    <li class="nav-title"><a href="#">Home</a></li>
+                    <li class="nav-title"><a href="#">About</a></li>
+                    <li class="nav-title"><a href="#">Contact</a></li>
                 </ul>
             </div>
+            
+
+
             <div class="flex flex-1 justify-center ">
                 <h3 class="text-2xl text-[#37447E] font-bold">Landing</h3>
             </div>
             <div class="flex flex-1 justify-end">
-                <button class="btn btn-sm bg-[#091133] text-white w-40 rounded-[3px]">Buy Now</button>
+                <button class="btn btn-sm bg-[#091133] text-white w-30 md:w-40 rounded-[3px]">Buy Now</button>
             </div>
         </nav>
         <!-- intro -->
-        <section class=" flex flex-col md:flex-row mt-20 lg:mt-80 space-y-6 lg:space-y-2 w-10/12 mx-auto">
-            <div class="intro-section-container w-full md:w-1/2 text-center md:text-left">
-                <h2 class="text-3xl md:text-4xl font-bold text[#091133] max-w-[500px] mb-3">Introduce Your Product Quickly & Effectively</h2>
+        <section class=" flex flex-col md:flex-row mt-20 lg:mt-80 space-y-6 lg:space-y-2 sm:w-10/12 mx-auto">
+            <div class="intro-section-container  w-full md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text[#091133] max-w-[500px] mb-3 text-center md:text-left mx-auto md:mx-0">Introduce Your Product Quickly & Effectively</h2>
                 <p class=" text-[#505F98] max-w-[500px] mx-auto md:mx-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                     massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                     <br> <br>
                     mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
                     enim.</p>
                 <div class="mt-6 flex flex-col md:flex-row items-center md:items-start">
-                    <button class="btn btn-sm bg-[#091133] text-white w-40 rounded-[3px] mr-4">Purchase UI Kit</button>
+                    <button class="btn btn-sm bg-[#091133] text-white w-40 rounded-[3px] md:mr-4">Purchase UI Kit</button>
                     <button class="btn btn-sm text-[#091133] rounded-[3px] w-40 border-blue-950 border-2">Learn More</button>
                 </div>
             </div>
            
         </section>
     </header>
-    <main class="md:w-10/12 mx-auto ">
-        <!-- light sect -->
 
-        <section class="h-[700px] md:flex">
-            <div class="light-section-container w-1/2 space-y-3 pr-2 pt-32">
-                <h2 class="text-3xl font-bold">Light, Fast & Powerful</h2>
+
+    <main class="w-10/12 mx-auto ">
+        <!-- light features sect -->
+
+        <section class="h-auto md:h-[700px] flex flex-col-reverse md:flex-row">
+            <div class="light-section-container w-full md:w-1/2 space-y-3 pr-2 pt-10 md:pt-32 text-center md:text-left ">
+                <h2 class="text-2xl md:text-3xl font-bold">Light, Fast & Powerful</h2>
                 <p class="text-[#505F98]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
                     <br> <br>
                     mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                 
-                <div class="md:flex pt-14">
-                    <div class="md:w-1/2 pr-2">
-                        <img class="pb-4" src="images/light_pic.jpg" alt="">
+                <div class="flex flex-col sm:flex-row items-center md:items-start pt-14">
+                    <div class="w-full sm:w-1/2 text-center sm:text-left pr-2">
+                        <img class="pb-4 mx-auto sm:mx-0" src="images/light_pic.jpg" alt="">
                         <h5 class="text-2xl font-bold pb-2">Title Goes Here</h5>
                         <p class="text-[#5D6970]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                     </div>
-                    <div class="md:w-1/2  ">
-                        <img class="pb-4 " src="images/light_pic.jpg" alt="">
+                    <div class="w-full sm:w-1/2 text-center sm:text-left ">
+                        <img class="pb-4 mx-auto sm:mx-0" src="images/light_pic.jpg" alt="">
                         <h5 class="text-2xl font-bold pb-2">Title Goes Here</h5>
                         <p class="text-[#5D6970]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                     </div>
                     
                 </div>
             </div>
-            <div class="light-section-container md:flex items-center justify-center w-1/2">
-                <img class=""  src="images/sec1.jpg" alt="">
+            <div class="light-section-container w-full md:w-1/2 flex items-center justify-center ">
+                <img class="h-[300px] md:h-auto"  src="images/sec1.jpg" alt="">
             </div>
         </section>
-        <section class="md:h-[500px] flex ">
-            <div class="light-section-container-2 w-1/2 space-y-3 md:flex justify-center ">
-                <img class="md:h-[250px] " src="images/sec2.jpg" alt="">
+
+        <!-- feature 2 -->
+        <section class="h-auto md:h-[500px] flex flex-col md:flex-row ">
+            <div class="light-section-container-2 w-full md:w-1/2 space-y-3 flex justify-center ">
+                <img class="h-auto md:h-[250px] " src="images/sec2.jpg" alt="">
             </div>
-            <div class="light-section-container-2 w-1/2 space-y-3 px-4 pt-12 pl-14 max-w-[540px]">
-                <h5 class="text-3xl font-bold">Light, Fast & Powerful</h5>
+            <div class="light-section-container-2 w-full md:w-1/2 space-y-3 p-6 md:pt-12 md:pl-14 max-w-[540px] text-center md:text-left">
+                <h5 class="text-2xl md:text-3xl font-bold">Light, Fast & Powerful</h5>
                 <p class="text-[#6F7CB2]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
                     <br>
                     mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
@@ -97,48 +120,47 @@
         </section>
 
         <!--l sect-2 -->
-        <section class="md:h-[500px] flex ">
-            <div class="light-section-container-2 md: w-1/2 space-y-3 flex justify-center ">
-                <img class="h-[250px]" src="images/sect3.jpg" alt="">
+        <section class="h-auto md:h-[500px] flex flex-col md:flex-row ">
+            <div class="light-section-container-2 w-full md:w-1/2 space-y-3 flex justify-center ">
+                <img class="h-auto md:h-[250px]" src="images/sect3.jpg" alt="">
             </div>
-            <div class="light-section-container-2 w-1/2 space-y-3 px-4 pt-12 pl-14 max-w-[540px]">
-                <h5 class="text-3xl font-bold">Light, Fast & Powerful</h5>
+            <div class="light-section-container-2 w-full md:w-1/2 space-y-3 p-6 md:pt-12 md:pl-14 max-w-[540px] text-center md:text-left">
+                <h5 class="text-2xl md:text-3xl font-bold">Light, Fast & Powerful</h5>
                 <p class="text-[#6F7CB2]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
                     <br>
                     mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
             </div>
         </section>
-        <!-- sect 3 -->
-        <section class="md:h-[500px] flex ">
-            <div class="light-section-container-2 w-1/2 space-y-3 md:flex justify-center ">
-                <img class="h-[250px]" src="images/sect4.jpg" alt="">
+ <!-- sect 3 -->
+        <section class="h-auto md:h-[500px] flex flex-col md:flex-row ">
+            <div class="light-section-container-2 w-full md:w-1/2 space-y-3 flex justify-center ">
+                <img class="h-auto md:h-[250px]" src="images/sect4.jpg" alt="">
             </div>
-            <div class="light-section-container-2 w-1/2 space-y-3 px-4 pl-14 max-w-[540px]">
-                <h5 class="text-3xl font-bold">Light, Fast & Powerful</h5>
+            <div class="light-section-container-2 w-full md:w-1/2 space-y-3 p-6  md:pl-14 max-w-[540px] text-center md:text-left">
+                <h5 class="text-2xl md:text-3xl font-bold">Light, Fast & Powerful</h5>
                 <p class="text-[#6F7CB2] pb-8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
                     <br>
                     mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                     <button class="btn btn-sm bg-[#091133] text-white w-40 rounded-[3px] ">Purchase Now</button>
             </div>
-           
         </section>
-
+        
        
-     
+    
 
     </main>
-    <footer class="contain h-[800px] bg-[#e7ecff7e] ">
-        <section class="md:flex flex-col justify-center items-center pt-60 space-y-3 w-10/12 mx-auto">
-            <h2 class="text-3xl font-bold text-[#091133] ">A Price To Suit Everyone</h2>
+    <footer class="contain h-auto md:h-[800px] bg-[#e7ecff7e] ">
+        <section class="flex flex-col justify-center items-center pt-40 md:pt-60 space-y-3 w-10/12 mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-[#091133] ">A Price To Suit Everyone</h2>
             <p class="text-[#6F7CB2] max-w-[600px] text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
-            <h1 class="text-4xl text-[#222F65] font-bold pt-8">$40</h1>
+            <h1 class="text-3xl md:text-4xl text-[#222F65] font-bold pt-8">$40</h1>
             <p class="text-[#37447E]">UI Design Kit</p>
             <p class="text-[#5D6970] pt-10"><small>See, One price. Simple.</small></p>
             <button class="btn btn-sm bg-[#091133] text-white w-40 rounded-[3px]">Purchase Now</button>
         </section>
-        <section class="  bg-[#E7ECFF] mt-44 ">
-                <div class=" h-[200px] w-10/12 mx-auto pt-12">
-                    <div class="flex items-center justify-between">
+        <section class="  bg-[#E7ECFF] mt-20  md:mt-44 ">
+                <div class="h-auto md:h-[200px] w-10/12 mx-auto pt-12 text-center md:text-left">
+                    <div class="flex flex-col md:flex-row items-center justify-between">
                         <p><small>&copy;2023 Yourcompany</small></p>
                         <h3 class="text-2xl text-[#37447E] font-bold">Landing</h3>
                         <button class="btn btn-sm bg-[#091133] text-white w-32 rounded-[3px]">Purchase Now</button>
@@ -146,13 +168,13 @@
                     <br>
                     <br>
                     <hr>
-                    <div class="md:flex justify-between items-center pt-5">
+                    <div class="flex flex-col gap-4 md:flex-row justify-between items-center pt-5">
                         <ul class="flex gap-12">
                             <li><a href="">Home</a></li>
                             <li><a href="">About</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
-                        <div class=" md:flex gap-5 gray-icons">
+                        <div class=" flex gap-5 gray-icons">
                             <img class=" h-[30px] w-[30px]" src="images/icons/facebook.png" alt="">
                             <img class="h-[30px] w-[30px]" src="images/icons/linkedin.png" alt="">
                             <img class="h-[30px] w-[30px]" src="images/icons/twitter.png" alt="">
