@@ -22,11 +22,25 @@
 
 <body>
     <header>
-        <nav class="flex flex-wrap items-center py-4 w-10/12 mx-auto">
+        <nav class="flex flex-wrap items-center py-4 w-10/12 mx-auto relative">
             <div class="flex flex-1 justify-start relative">
                 <h1 class="text-2xl text-[#37447E] font-bold">Landing</h1>
             </div>
+            <div class="relative group ">
+                <button class="btn btn-sm bg-blue-950 text-white md:hidden flex flex-1 items-center max-w-20">Menu</button>
+                <div class="absolute top-[-200px] left-0  group-hover:top-full duration-700 bg-white shadow-md rounded-md w-40">
+                    <ul class="text-[#505F98]">
+                        <li class="px-4 py-2 border-b hover:bg-gray-100"><a href="index.html">Home</a></li>
+                        <li class="px-4 py-2 border-b hover:bg-gray-100"><a href="#">About</a></li>
+                        <li class="px-4 py-2 border-b hover:bg-gray-100"><a href="#">Products</a></li>
+                        <li class="px-4 py-2 hover:bg-gray-100"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            
             <div class="flex flex-1 justify-end gap-14 ">
+                
                 <ul class="hidden md:flex gap-14 text-[#505F98]">
                     <li class="nav-title"><a href="index.html">Home</a></li>
                     <li class="nav-title"><a href="#">About</a></li>
@@ -39,9 +53,9 @@
     <main class="">
         <!-- feature 1 -->
         <section class="w-10/12 mx-auto">
-            <div class=" h-auto flex flex-col-reverse gap-5 md:flex-row  md:h-[700px] md:pt-16 text-center items-center md:text-left">
+            <div class=" h-auto flex flex-col-reverse gap-5 md:flex-row  md:h-[700px] md:pt-16   text-center items-center md:text-left">
                 <div class="md:w-1/2">
-                    <h1 class="text-2xl md:text-3xl font-bold md:max-w-[450px] text-[#091133] pb-4">Design & Build Your Own
+                    <h1 class="text-2xl md:text-3xl font-bold md:max-w-[450px] text-[#091133] pb-4 md:pt-28 lg:pt-0">Design & Build Your Own
                         Landing Pages</h1>
                     <p class="text-[#505F98] md:max-w-[480px]  pb-16">Lorem ipsum dolor sit amet, consectetuer adipiscing
                         elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
@@ -189,7 +203,7 @@
                 <div class="bg-[#091133] md:w-1/3  h-[700px] w-full ">
 
                 </div>
-                <div class="md:w-2/3  lg:p-36 p-10 pt-16 text-center md:text-left">
+                <div class="md:w-2/3  lg:px-36 px-10  text-center md:text-left">
                     <h1 class="text-2xl md:text-3xl font-bold md:max-w-[450px] text-[#091133] pb-4">Light, Fast & Powerful</h1>
                     <p class="text-[#505F98]   pb-16">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
                         mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
@@ -223,9 +237,65 @@
                 </div>
             </div>
         </section>
+        <!-- feature 5 -->
+
+        <section>
+            <div class=" h-auto md:h-[500px] flex flex-col md:flex-row mt-48">
+                <div class="bg-[#091133] md:w-1/3  h-[500px] w-full ">
+
+                </div>
+                <div class="md:w-2/3  lg:px-36 px-10 lg:py-16 md:py-5 text-center md:text-left">
+                    
+                    <div class="flex flex-col sm:flex-row items-center md:items-start pt-2">
+                        <div class="w-full sm:w-1/2 text-center sm:text-left pr-2">
+                            <img class="pb-4 mx-auto sm:mx-0" src="images/light_pic.jpg" alt="">
+                            <h5 class="text-2xl font-bold pb-2">Title Goes Here</h5>
+                            <p class="text-[#5D6970] pb-8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                Aenean commodo ligula eget dolor. </p>
+                            <img class="pb-4 mx-auto sm:mx-0" src="images/light_pic.jpg" alt="">
+                            <h5 class="text-2xl font-bold pb-2">Title Goes Here</h5>
+                            <p class="text-[#5D6970]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. </p>
+                        </div>
+                        <div class="w-full sm:w-1/2 text-center sm:text-left ">
+                            <img class="pb-4 mx-auto sm:mx-0" src="images/light_pic.jpg" alt="">
+                            <h5 class="text-2xl font-bold pb-2">Title Goes Here</h5>
+                            <p class="text-[#5D6970] pb-8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                Aenean commodo ligula eget dolor. </p>
+                            <img class="pb-4 mx-auto sm:mx-0" src="images/light_pic.jpg" alt="">
+                            <h5 class="text-2xl font-bold pb-2">Title Goes Here</h5>
+                            <p class="text-[#5D6970]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. </p>
+                        </div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
     <footer>
-
+        <nav class="flex flex-wrap items-center py-4 w-10/12 mx-auto">
+            <div class="flex flex-1 justify-start relative">
+                <h1 class="text-2xl text-[#37447E] font-bold">Landing</h1>
+            </div>
+            <div class="flex flex-1 justify-center gap-14 ">
+                <ul class="hidden md:flex gap-14 text-[#505F98]">
+                    <li class="nav-title"><a href="index.html">Home</a></li>
+                    <li class="nav-title"><a href="#">About</a></li>
+                    <li class="nav-title"><a href="#">Contact</a></li>
+                </ul>
+                
+            </div>
+            <div class="flex flex-1 sm:flex-row flex-col items-end md:gap-5 gap-2">
+                <button class="btn btn-sm bg-[#091133] text-white w-32 md:w-36 rounded-[3px]">Purchase UI Kit</button>
+                <button class="btn btn-sm bg-[#FFD166] text-[#091133] w-32 md:w-36 rounded-[3px]">Contact Us</button>
+            </div>
+        </nav>
     </footer>
 </body>
 
