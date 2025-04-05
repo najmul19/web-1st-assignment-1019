@@ -31,9 +31,16 @@ hr{
     filter: grayscale(100%);
 }
 
-header{
+.head-sec{
     background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-position: top right, bottom right;
     
+}
+
+@media screen and (max-width:750px) {
+    .head-sec{
+        background-image: none;
+        background-color: #F1F3FF;
+    }
 }
